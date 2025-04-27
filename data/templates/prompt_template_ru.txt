@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}">
+  <meta name="keywords" content="{{keywords}}">
+</head>
+<body>
+  <div class="product-description-container" itemscope itemtype="https://schema.org/Product">
+    <h1 class="product-title" itemprop="name">{{product_name}}</h1>
+    
+    <div class="product-description" itemprop="description">
+      <p>{{product_name}} - идеальный выбор для ваших творческих проектов. Наш интернет-магазин Hollywool предлагает широкий ассортимент товаров для вязания с доставкой по всей Европе.</p>
+      
+      <div class="product-features">
+        <h2>Особенности {{product_name}}:</h2>
+        <ul>
+          <li>Высокое качество материалов</li>
+          <li>Доступная цена</li>
+          <li>Большой выбор цветов</li>
+          <li>Подходит для разных проектов вязания</li>
+        </ul>
+      </div>
+      
+      <div class="product-related-links">
+        <h3>Другие товары, которые могут вас заинтересовать:</h3>
+        <div class="internal-links">
+          {{internal_links}}
+        </div>
+      </div>
+      
+      <div class="product-faq">
+        <h3>Часто задаваемые вопросы:</h3>
+        {{faq}}
+      </div>
+    </div>
+  </div>
+  
+  <div class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://hollywool.eu/">
+        <span itemprop="name">Главная</span>
+      </a>
+      <meta itemprop="position" content="1">
+    </span> &gt; 
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="https://hollywool.eu/{{category}}/">
+        <span itemprop="name">{{category_name}}</span>
+      </a>
+      <meta itemprop="position" content="2">
+    </span> &gt; 
+    <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name">{{product_name}}</span>
+      <meta itemprop="position" content="3">
+    </span>
+  </div>
+  
+  <!-- Скрытый блок для SEO -->
+  <div class="seo-keywords" style="display: none;">
+    <p>Ключевые слова: {{keywords}}</p>
+    <p>Дополнительные ключевые слова: {{long_tail_keywords}}</p>
+  </div>
+</body>
+</html> 

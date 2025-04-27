@@ -1,0 +1,23 @@
+{
+  "name": "hollywool-product-description-generator",
+  "version": "1.0.0",
+  "description": "Generator for product descriptions using Hollywool semantic core",
+  "main": "generate_single_description.js",
+  "scripts": {
+    "start": "node generate_single_description.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "woocommerce",
+    "product",
+    "description",
+    "generator",
+    "seo"
+  ],
+  "author": "Hollywool",
+  "license": "MIT",
+  "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "dotenv": "^16.0.3"
+  }
+} 

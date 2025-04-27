@@ -1,0 +1,32 @@
+# Зависимости Node.js
+node_modules/
+package-lock.json
+
+# Файлы окружения и секреты
+.env
+.env.*
+!.env.example
+.venv/
+*.pem
+*.key
+
+# Временные файлы
+.cache/
+*.log
+*.tmp
+
+# Выходные данные и кэши
+data/output/*
+!data/output/.gitkeep
+PPX_CACHE/
+
+# Файлы IDE и редакторов
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+.cursor/
+.ai-snippets/
+
+# Прочие файлы 
