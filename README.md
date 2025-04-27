@@ -22,7 +22,7 @@
 
 1. Клонировать репозиторий:
 ```bash
-git clone https://github.com/your-username/product-description-generator.git
+git clone https://github.com/Vostos007/product-description-generator.git
 cd product-description-generator
 ```
 
